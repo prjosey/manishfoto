@@ -1,0 +1,79 @@
+   <!DOCTYPE html>
+   <html>
+   <head>
+     <title> Manish's Photography </title>
+     <link href="css/layout.css" rel="stylesheet" />
+     <style>
+     #slideshow {
+      margin: 80px auto;
+      position: relative;
+        /*width: 240px;
+        height: 240px;*/
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      }
+
+      #slideshow > div {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+      }
+      </style>
+
+      <script src="js/jquery.min.js"></script>
+      <script>
+      $(function() {
+
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+          $('#slideshow > div:first')
+          .fadeOut(1000)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo('#slideshow');
+        },  3000);
+
+      });
+      </script>
+    </head> 
+    <header>
+      <img src="logo1.jpg" height="100" width="250" alt="Photography" />
+    </header>
+    <body background="bg5.gif">
+
+     <nav class="horizontal">
+       <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Photo Gallery</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Order Form</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="slideshow">
+     <div>
+       <img src="image/4.jpg" width="1200" height="300">
+     </div>
+     <div>
+       <img src="image/6.jpg" width="1200" height="300">
+     </div>
+     <div>
+       <img src="image/1.jpg" width="1200" height="300">
+     </div>
+     <div>
+       <img src="image/2.jpg" width="1200" height="300">
+     </div>
+     
+   </div>
+
+   <footer>
+    Copyright
+  </footer>
+</body>
+
+</html>
