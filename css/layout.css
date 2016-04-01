@@ -1,11 +1,12 @@
-body{
-   background-color:black;
-}
+
 /*nav.horizontal {   
  height: 38px;
    width: 98%;
    margin: 0px 1%;
 }*/
+body{
+   m
+}
 
 ul{
    list-style: none;
@@ -49,7 +50,7 @@ width: 100%;
 text-align: left;
 }
 
-/*nav.horizontal ul li a{
+nav.horizontal ul li a{
 display: block;
 float: left;
 width: 32%;
@@ -63,8 +64,7 @@ margin: 0px 4px 25px 0px;
 }
 nav.horizontal ul {
 list-style-type: none;
-}*/
-nav.horizontal {
+}
 clear: left;
 display: block;
 width: 100%;
