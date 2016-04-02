@@ -1,63 +1,92 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Helvetica, sans-serif;
+ background: black;
+}
 
-/*nav.horizontal {   
+
+.header {
+
+  width:100%;
+  height: 120px;
+}
+
+#slideshow {
+ 
+  position: relative;
+  padding: 10px;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+#content {
+   
+ min-height:500px;
+ text-align: center;
+
+}
+  /*nav.horizontal {   
  height: 38px;
    width: 98%;
    margin: 0px 1%;
-}*/
-body{
-   m
-}
+   }*/
 
-ul{
-   list-style: none;
-}
 
-nav.horizontal li {
-   
-   border: 1px solid black;
-   display: block;
-   font-family: Tahoma, Geneva, sans-serif;
-   font-size: 12px;
-   font-weight: bold;
-   float: left;
-   height: 30px;
-   letter-spacing: =2px;
-   line-height: 30px;
-   margin: 3px 0.5%;
-   text-align: center;
-   width: 12%;
-   background-color: black;
-}
-nav.horizontal li:first-of-type {
+
+   ul{
+     list-style: none;
+     padding-left: 0px;
+
+   }
+   nav.horizontal li {
+
+     border: 1px solid black;
+     display: inline-block;
+     font-family: Tahoma, Geneva, sans-serif;
+     font-size: 1em;
+     font-weight: bold;
+     height: 30px;
+     letter-spacing: =2px;
+     line-height: 30px;
+     margin: 3px 0.5%;
+     text-align: center;
+     width:100px;
+     background-color: white;
+   }
+/*nav.horizontal li:first-of-type {
    margin-left: 4%;
 }
 nav.horizontal li:last-of-type {
-   margin-right: 4%;
+ margin-right: 4%;*/
 }
-nav.horizontal li a {
-   color:white;
+nav.horizontal ul li  {
+ color:white;
+ display: inline;
 }
 nav.horizontal ul li{
-   border: 1px solid rgb(192, 192, 192);
-  -moz-border-radius: 10px;
-   -webkit-border-radius: 10px;
-   border-radius: 10px;
-   box-shadow: inset white 3px 3px 2px,
-            inset rgb(128, 128, 128) -5px -5px 5px;
-}
-header {
-width: 100%;
-text-align: left;
+ border: 1px solid rgb(192, 192, 192);
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ box-shadow: inset white 3px 3px 2px,
+ inset rgb(128, 128, 128) -5px -5px 5px;
 }
 
-nav.horizontal ul li a{
+/*nav.horizontal ul li a{
 display: block;
 float: left;
 width: 32%;
 font-size: 1em;
 height: 3em;
 text-align: center;
-border: 1px solid red;
+border: 1px solid black;
 background-color: black;
 line-height: 3em;
 margin: 0px 4px 25px 0px;
@@ -65,22 +94,19 @@ margin: 0px 4px 25px 0px;
 nav.horizontal ul {
 list-style-type: none;
 }
-clear: left;
-display: block;
-width: 100%;
-margin-bottom: 30px;
-}
+
 
 nav.horizontal ul {
 list-style-type: none;
 margin: 0px;
 padding: 0px;
 font-size: 0.8em;
+}*/
+.footer{
+ text-align: center;
+ color: white;
+ margin-top: 25px;
+ height: 50px;
+ vertical-align: middle;
+ 
 }
-footer{
-   text-align: center;
-   color: white;
-   float: left;
-}
-
-

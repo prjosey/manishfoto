@@ -1,81 +1,52 @@
-   <!DOCTYPE html>
-   <html>
-   <head>
-     <title> Manish's Photography </title>
-     <link href="css/layout.css" rel="stylesheet" />
-     <style>
-     #slideshow {
-     /* margin: 80px auto;*/
-      position: relative;
-        /*width: 240px;
-        height: 240px;*/
-        padding: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.4);
-      }
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Manish's Photography </title>
+  <link href="css/layout.css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body> 
+  <div>
+    <div class="header">
+      <div style="float:left;">
+        <img src="logo1.jpg" height="100" width="250" alt="Photography" />
+      </div>
+      <div style="float: right; width:700px;">
+        <nav class="horizontal">
 
-      #slideshow > div {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-      }
-      </style>
-
-      <script src="js/jquery.min.js"></script>
-      <script>
-      $(function() {
-
-        $("#slideshow > div:gt(0)").hide();
-
-        setInterval(function() {
-          $('#slideshow > div:first')
-          .fadeOut(1000)
-          .next()
-          .fadeIn(1000)
-          .end()
-          .appendTo('#slideshow');
-        },  3000);
-
-      });
-      </script>
-    </head> 
-    <header>
-      <img src="logo1.jpg" height="100" width="250" alt="Photography" />
-      <nav class="horizontal">
-       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Photo Gallery</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Order Form</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-    </header>
-    <body background="back.gif">
-
-     
-    <div id="slideshow">
-     <div>
-       <img src="image/sky.gif" >
-     </div>
-     <div>
-       <img src="image/hand1.gif" >
-     </div>
-      <div>
-       <img src="image/buddha.gif" >
-     </div>
-     <div>
-       <img src="image/abstract.gif">
-     </div>
-     
-    
-   </div>
-
-   <footer>
-    Copyright
-  </footer>
+          <ul>   
+            <li><a href="#">Home</a></li>
+            <li><a href="photogallery.htm">Gallery</a></li>
+            <li><a href="Services.htm">Services</a></li>
+            <li><a href="Order.htm">Order Form</a></li>
+            <li><a href="About.htm">About Us</a></li>
+            <li><a href="Contact.htm">Contact Us</a></li>                              
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="content">
+      <div id="slideshow" height="100">
+        <div>
+          <img src="image/sky.gif" >
+        </div>
+        <div>
+          <img src="image/hand1.gif" >
+        </div>
+        <div>
+          <img src="image/buddha.gif" >
+        </div>
+        <div>
+          <img src="image/abstract.gif">
+        </div>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="footer">
+      Copyright @2016 Manish Fotography
+    </div>    
+  </div>
 </body>
-
 </html>
