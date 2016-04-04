@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Photo Gallery </title>
-   <link href="layout.css" rel="stylesheet" />
-   </head>        
-<body>
-      <img src="logo.jpg" alt="Manish Photography" />
-      <header>
-         
-       <nav class="horizontal">
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Photo Gallery</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Order Form</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-         </ul>
-      </nav>
-      </header>
-	<section id="Wedding">
-        Wedding 
-		</section>
+  <title> Manish's Photography </title>
+  <link href="css/layout.css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body> 
+  <div>
+    <div class="header">
+      <div style="float:left;">
+        <img src="logo1.jpg" height="100" width="250" alt="Photography" />
+      </div>
+      <div style="float: right; width:700px;">
+        <nav class="horizontal">
 
+          <ul>   
+            <li><a href="home.htm">Home</a></li>
+            <li><a href="photogallery.htm">Gallery</a></li>
+            <li><a href="Services.htm">Services</a></li>
+            <li><a href="Order.htm">Order Form</a></li>
+            <li><a href="About.htm">About Us</a></li>
+            <li><a href="Contact.htm">Contact Us</a></li>                              
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="content">
+      <div id="slideshow" height="100">
+        <div>
+          <img src="image/sky.gif" >
+        </div>
+        <div>
+          <img src="image/hand1.gif" >
+          <h2><span>Let us capture your memories<span></h2>
+        </div>
+        <div>
+          <img src="image/buddha.gif" >
+        </div>
+        <div>
+          <img src="image/abstract1.gif">
+        </div>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="footer">
+      Copyright @2016 Manish Fotography
+    </div>    
+  </div>
 </body>
-
 </html>

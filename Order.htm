@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Order Form</title>
-  <link href="layout.css" rel="stylesheet" />
+  <title> Manish's Photography </title>
+  <link href="css/layout.css" rel="stylesheet" />
+  <link href="css/order.css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
-<body>
-      <img src="logo.jpg" alt="Manish Photography" />
-      <header>
-         
-     <nav class="horizontal">
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Photo Gallery</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Order Form</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-         </ul>
-      </nav>
-      </header>
-      <section>
-      	<div>
-       <fieldset id="custinfo">
+<body> 
+  <div>
+    <div class="header">
+      <div style="float:left;">
+        <img src="logo1.jpg" height="100" width="250" alt="Photography" />
+      </div>
+      <div style="float: right; width:700px;">
+        <nav class="horizontal">
+
+          <ul>   
+            <li><a href="home.htm">Home</a></li>
+            <li><a href="photogallery.htm">Gallery</a></li>
+            <li><a href="Services.htm">Services</a></li>
+            <li><a href="Order.htm">Order Form</a></li>
+            <li><a href="About.htm">About Us</a></li>
+            <li><a href="Contact.htm">Contact Us</a></li>                              
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="content">
+      <div id="slideshow" height="100">
+        <div>
+          <img src="image/sky.gif" >
+        </div>
+        <div>
+          <img src="image/hand1.gif" >
+          <h2><span>Let us capture your memories<span></h2>
+        </div>
+        <div>
+          <img src="image/buddha.gif" >
+        </div>
+        <div>
+          <img src="image/abstract1.gif">
+        </div>
+      </div>
+      <div id="form">
+      fieldset id="custinfo">
          <legend>Customer Information</legend>
          <table>
           <tr>
@@ -33,29 +57,29 @@
             <td><input name="lname" id="lname" required="required" /></td>
           </tr>
           <tr>
-            <td><label for="home">House No. *</label></td>
-            <td><input name="home" id="home" required="required" /></td>
+            <td><label for="street">House no. *</label></td>
+            <td><input name="street" id="street" required="required" /></td>
           </tr>
           <tr>
-            <td><label for="city">City *</label></td>
+            <td><label for="city">District *</label></td>
             <td><input name="city" id="city" required="required"/></td>
           </tr>
           <tr>
-            <td> <label for="district">District *</label></td>
-            <td><input name="district" id="district" required="required" /></td>            
+            <td> <label for="state">Zone *</label></td>
+            <td> <input name="state" id="state" required="required" /></td>
           </tr>
           <tr>
-            <td> <label for="zone">Zone </label></td>
-            <td><input type="text" name="zone" required="required"></td>
+            <td> <label for="zip">Ward no. </label></td>
+            <td><input type="text" name="zip" maxlength="5" pattern="^\d{5}(\-\d{4})?$" required="required"></td>
           </tr>
           <tr>
             <td><label for="phone">Phone Number *</label></td>
-            <td> <input type="text" name="phone" placeholder="(nnnn)nnn-nnn" 
+            <td> <input type="text" name="phone" placeholder="(nnn)nnn-nnnn" 
               pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required"></td>
             </tr>
             <tr>
               <td><label for="work">Work Number</label></td>
-              <td> <input name="work" id="work" placeholder="(nnnn) nnn-nnn"  /></td>
+              <td> <input name="work" id="work" placeholder="(nnn) nnn-nnnn"  /></td>
             </tr>
             <tr>
               <td><label for="email">E-mail</label></td>
@@ -63,6 +87,13 @@
             </tr>
           </table>
         </fieldset> 
-      </section>
+    </div>
+    </div>
+    
+    <div style="clear:both"></div>
+    <div class="footer">
+      Copyright @2016 Manish Fotography
+    </div>    
+  </div>
 </body>
 </html>
