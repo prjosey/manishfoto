@@ -3,7 +3,7 @@ body {
  margin: 0;
  padding: 0;
  font-family: Helvetica, sans-serif;
- background: url(bg4.gif);
+ background: url(bg1.gif);
  overflow-x: hidden;
 }
 
@@ -15,48 +15,7 @@ body {
   padding: 15px;
 }
 
-#slideshow {
- 
-  position: relative;
-  padding: 10px;
 
-}
-
-#slideshow > div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}
-
-.polaroid  {
-  border:10px solid #FFD700;
-
-  box-shadow: inset black -15px -15px 75px,
-        black 5px 5px 5px;
-}
-h2 span { 
-   color: white; 
-   font: bold 2em Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   padding: 10px; 
-   position: absolute;
-   top: 10px;
-   left:10px;
-   right: 10px;
-   bottom: 10px;
-   float: right; 
-    
-}
-
-
-#content {
-
-min-height:600px;
-text-align: center;
-padding-top: 25px;
-}
   /*nav.horizontal {   
  height: 38px;
    width: 98%;
@@ -70,7 +29,7 @@ padding-top: 25px;
      padding-left: 0px;
 
    }
-   nav.horizontal li {
+  nav.horizontal li {
 
      
      display: inline-block;
@@ -117,20 +76,26 @@ margin: 0px 4px 25px 0px;
 nav.horizontal ul {
 list-style-type: none;
 }
+nav.horizontal ul li a:hover{
+  color: red;
+  font-size: 1em;
+}
+nav.horizontal ul li:hover{
+  background-color: #800000;
+}
 
 
-/*nav.horizontal ul {
+nav.horizontal ul {
 list-style-type: none;
 margin: 0px;
 padding: 0px;
 font-size: 0.8em;
-}*/
+}
 .footer{
-  background: rgba(0, 0, 0, .95);
+background: rgba(0, 0, 0, .95);
  text-align: center;
  color: white;
  height: 20px;
  padding: 20px;
  vertical-align: middle;
- 
 }

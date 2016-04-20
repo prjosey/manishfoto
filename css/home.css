@@ -1,0 +1,42 @@
+#slideshow {
+ 
+  position: relative;
+  padding: 10px;
+
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.polaroid  {
+  border:10px solid #FFD700;
+
+  box-shadow: inset black -15px -15px 75px,
+        black 5px 5px 5px;
+}
+h2 span { 
+   color: white; 
+   font: bold 2em Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   padding: 10px; 
+   position: absolute;
+   top: 10px;
+   left:10px;
+   right: 10px;
+   bottom: 10px;
+   float: right; 
+    
+}
+
+
+#content {
+
+min-height:600px;
+text-align: center;
+padding-top: 25px;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Manish's Photography </title>
+  <title>Order Form </title>
   <link href="css/layout.css" rel="stylesheet" />
   <link href="css/order.css" rel="stylesheet" />
   <script src="js/jquery.min.js"></script>
@@ -11,89 +11,102 @@
   <div>
     <div class="header">
       <div style="float:left;">
-        <img src="logo1.jpg" height="100" width="250" alt="Photography" />
+        <img src="image/logo.png" height="75" width="187" alt="Photography" />
       </div>
       <div style="float: right; width:700px;">
         <nav class="horizontal">
-
           <ul>   
             <li><a href="home.htm">Home</a></li>
-            <li><a href="photogallery.htm">Gallery</a></li>
-            <li><a href="Services.htm">Services</a></li>
-            <li><a href="Order.htm">Order Form</a></li>
-            <li><a href="About.htm">About Us</a></li>
-            <li><a href="Contact.htm">Contact Us</a></li>                              
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Order Form</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>                              
           </ul>
         </nav>
       </div>
     </div>
     <div style="clear:both"></div>
-    <div id="content">
-      <div id="slideshow" height="100">
-        <div>
-          <img src="image/sky.gif" >
-        </div>
-        <div>
-          <img src="image/hand1.gif" >
-          <h2><span>Let us capture your memories<span></h2>
-        </div>
-        <div>
-          <img src="image/buddha.gif" >
-        </div>
-        <div>
-          <img src="image/abstract1.gif">
-        </div>
-      </div>
-      <div id="form">
-      fieldset id="custinfo">
-         <legend>Customer Information</legend>
-         <table>
-          <tr>
-            <td><label for="fname">First Name *</label></td>
-            <td><input name="fname" id="fname" required="required"/></td>
+    <div id="form">
+      <fieldset id="custinfo">
+       <legend>Customer Information</legend>
+       <table>
+        <tr>
+          <td><label for="fname">First Name *</label></td>
+          <td><input name="fname" id="fname" required="required"/></td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last Name *</label></td>
+          <td><input name="lname" id="lname" required="required" /></td>
+        </tr>
+        <tr>
+          <td><label for="street">House no. *</label></td>
+          <td><input name="street" id="street" required="required" /></td>
+        </tr>
+        <tr>
+          <td><label for="city">District *</label></td>
+          <td><input name="city" id="city" required="required"/></td>
+        </tr>
+        <tr>
+          <td> <label for="state">Zone *</label></td>
+          <td> <input name="state" id="state" required="required" /></td>
+        </tr>
+        <tr>
+          <td> <label for="zip">Ward no. </label></td>
+          <td><input type="text" name="zip" maxlength="5" pattern="^\d{5}(\-\d{4})?$" required="required"></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number *</label></td>
+          <td> <input type="text" name="phone" placeholder="(nnn)nnn-nnnn" 
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required"></td>
           </tr>
           <tr>
-            <td><label for="lname">Last Name *</label></td>
-            <td><input name="lname" id="lname" required="required" /></td>
+            <td><label for="work">Work Number</label></td>
+            <td> <input name="work" id="work" placeholder="(nnn) nnn-nnnn"  /></td>
           </tr>
           <tr>
-            <td><label for="street">House no. *</label></td>
-            <td><input name="street" id="street" required="required" /></td>
+            <td><label for="email">E-mail</label></td>
+            <td><input name="email" id="email" type="email" /></td>
           </tr>
-          <tr>
-            <td><label for="city">District *</label></td>
-            <td><input name="city" id="city" required="required"/></td>
-          </tr>
-          <tr>
-            <td> <label for="state">Zone *</label></td>
-            <td> <input name="state" id="state" required="required" /></td>
-          </tr>
-          <tr>
-            <td> <label for="zip">Ward no. </label></td>
-            <td><input type="text" name="zip" maxlength="5" pattern="^\d{5}(\-\d{4})?$" required="required"></td>
-          </tr>
-          <tr>
-            <td><label for="phone">Phone Number *</label></td>
-            <td> <input type="text" name="phone" placeholder="(nnn)nnn-nnnn" 
-              pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required"></td>
-            </tr>
-            <tr>
-              <td><label for="work">Work Number</label></td>
-              <td> <input name="work" id="work" placeholder="(nnn) nnn-nnnn"  /></td>
-            </tr>
-            <tr>
-              <td><label for="email">E-mail</label></td>
-              <td><input name="email" id="email" type="email" /></td>
-            </tr>
-          </table>
-        </fieldset> 
-    </div>
-    </div>
-    
-    <div style="clear:both"></div>
-    <div class="footer">
-      Copyright @2016 Manish Fotography
-    </div>    
-  </div>
+        </table>
+      </fieldset> 
+      <fieldset id="requirements">
+       <legend>Requirements</legend>
+       <table>
+        <tr>
+          <td>Ocassion</td>
+          <td>
+            <select>
+          <option value="wedding">Wedding</option>
+          <option value="feeding">Rice Feeding</option>
+          <option value="Others">Others</option>
+        </select>
+          </td>
+          <td>Portfolio</td>
+          <td> 
+            <select>
+              <option value="model">Model</option>
+              <option value="child">Child</option>
+            </select>
+          </td>
+          <td>Others</td>
+          <td>
+            <select>
+              <option value="pp">Passport</option>
+              <option value="editing">Photo Editing</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <p id="button" align="center">
+     <input type="submit" value="Submit" />
+     <input type="reset" value="Cancel" />
+   </p>
+ </div>
+ <div style="clear:both"></div>
+ <div class="footer">
+  Copyright @2016 Manish Fotography
+</div>    
 </body>
 </html>

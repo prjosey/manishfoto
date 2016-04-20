@@ -1,18 +1,89 @@
 td{
-	color:white;
+	color:yellow;
 }
-#form > div {
-  position: absolute;
+#form{
+  /*position: absolute;
   top: 10px;
   left: 10px;
   right: 10px;
-  bottom: 10px;
+  bottom: 10px;*/
+ width: 800px;
+margin: auto;
 }
 
-#form{
+/*#form{
 	position: relative;
 
 }
-#slideshow{
-	visibility: hidden;
+div{
+	width: 800px;
+	margin: auto;
+}*/
+ td input:focus:invalid{
+	background: rgb(255, 0, 0) url(stop.png);
+	background-position: right bottom; 
+	background-repeat: no-repeat;
+}
+td input:focus:valid{
+	background: rgb(0, 255, 0) url(go.png);
+	background-position: right bottom; 
+	background-repeat: no-repeat;
+
+	
+}
+textarea{
+	display: block;
+	font-size: 0.9em;
+	float: left;
+	margin: 10px 0px;
+	height: 100px;
+	width: 250%;
+}
+#custinfo td input{
+	display: inline;
+	margin: 10px auto;
+	padding: 1px;
+	border: 2px inset;
+	width: 300px;
+}
+legend{
+	background-color: black;
+	color: white;
+	margin: 10px 0px 10px 0px;
+	text-indent: 20px;
+	width: 70%;
+	letter-spacing: 5px;
+}
+
+
+label{
+	display: inline;
+	float: none;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+}
+ input{
+	display: inline;
+	float: none;
+	margin: 0px 20px 0px 0px;
+}
+option{
+	display: block;
+}
+option label{
+	display: inline;
+	float: none;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+}
+option input{
+	display: inline;
+	float: none;
+	margin: 0px 20px 0px 0px;
+}
+select{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 2px;
 }
