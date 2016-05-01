@@ -1,5 +1,6 @@
 td{
-	color:yellow;
+	color:black;
+
 }
 #form{
   /*position: absolute;
@@ -9,6 +10,9 @@ td{
   bottom: 10px;*/
  width: 800px;
 margin: auto;
+border: 10px solid black;
+border-radius:15px;
+background-color: white;
 }
 
 /*#form{
@@ -20,12 +24,12 @@ div{
 	margin: auto;
 }*/
  td input:focus:invalid{
-	background: rgb(255, 0, 0) url(stop.png);
+	background: rgb(255, 0, 0);
 	background-position: right bottom; 
 	background-repeat: no-repeat;
 }
 td input:focus:valid{
-	background: rgb(0, 255, 0) url(go.png);
+	background: rgb(0, 255, 0);
 	background-position: right bottom; 
 	background-repeat: no-repeat;
 
